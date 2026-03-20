@@ -5,7 +5,7 @@ Bundle Symfony pour **`kiboko/temporal`**.
 ## État actuel (0.1)
 
 - Enregistre le bundle et charge une configuration DI de base.
-- Les services concrets (codec JSON, `TemporalTransportFactory`, transports Messenger gRPC, etc.) restent pour l’instant dans le PoC (`Kiboko\PocTemporal\Bundle\PocTemporalBundle`) ; ils seront **progressivement migrés** ici.
+- Services : `config/services.php` enregistre le codec JSON (`SymfonyJsonTemporalPayloadCodec`), `TemporalTransportFactory` (tag `messenger.transport_factory`), `ActivityTaskHandler` (autowiré) pour `GenericActivityTaskHandler`, et `TemporalTestSerializerFactory` pour les tests.
 
 ## Installation
 

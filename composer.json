@@ -1,6 +1,6 @@
 {
     "name": "kiboko/temporal-bundle",
-    "description": "Intégration Symfony pour kiboko/temporal (DI, configuration — extension Messenger à enrichir)",
+    "description": "Intégration Symfony (Messenger, DI, codec JSON) pour kiboko/temporal",
     "type": "symfony-bundle",
     "license": "MIT",
     "homepage": "https://github.com/gplanchat/temporal-bundle",
@@ -14,7 +14,12 @@
         "kiboko/temporal": "^0.1",
         "symfony/config": "^6.4 || ^7.0",
         "symfony/dependency-injection": "^6.4 || ^7.0",
-        "symfony/http-kernel": "^6.4 || ^7.0"
+        "symfony/http-kernel": "^6.4 || ^7.0",
+        "symfony/http-client": "^6.4 || ^7.0",
+        "symfony/messenger": "^6.4 || ^7.0",
+        "symfony/property-access": "^6.4 || ^7.0",
+        "symfony/serializer": "^6.4 || ^7.0",
+        "symfony/contracts": "^3.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^10.0|^11.0"
